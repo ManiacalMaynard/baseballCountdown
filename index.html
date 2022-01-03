@@ -11,15 +11,14 @@
 </head>
 <body>
 
-    <!-- This is not using semantic HTML because it's intended to be a single page app only. SEO probably won't play a role unless I roll out a full mobile app or something. Which is unlikely for this =) -->
+    <!-- This is not using semantic HTML because it's intended to be a single page app only. SEO probably won't play a part unless I roll out a full mobile app or something. Which is unlikely for this =) -->
     
     <div class="container">
         <div class="countdown">
             <div class="chosenTeam">
-                I am a logo
-                <button>Select Team</button>
+                Major or Minor League?
             </div>
-            <h2>Opening day is in:</h2>
+            <h2>Opening day is <span id="targetDate"></span> </h2>
             <div class="timerDisplay">
                 <span id="daysDisplay">DD</span> Days
                 <span id="hoursDisplay">HH</span> Hours
@@ -27,7 +26,10 @@
                 <span id="secondsDisplay">SS</span> Seconds
             </div>
         </div>
-        <div class="footer">This is a for fun project by Maynard at Maniacal Industries.com. Team logos are protected by copyright by their respective owners. Visit Maynard. See the GitHub repo.</div>
+        <div class="footer"><p>This is a "for fun" project by Maynard at Maniacal Industries.com. Team logos are protected by copyright by their respective owners.</p>
+            <p><a href="https://www.maniacalindustries.com/" target="_blank">Visit Maynard</a> or see the <a href="https://github.com/ManiacalMaynard/baseballCountdown" target="_blank"> GitHub repo</a>.</p>
+
+        </div>
     </div>
     
 </body>
