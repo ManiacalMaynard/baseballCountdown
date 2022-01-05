@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+    <!--Let's load some hot font action-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="./stylize.css">
 
     <title>Baseball Opening Day Countdown</title>
@@ -14,24 +20,32 @@
     <!-- This is not using semantic HTML because it's intended to be a single page app only. SEO probably won't play a part unless I roll out a full mobile app or something. Which is unlikely for this =) -->
     
     <div class="container">
+        <div class="box">
         <div class="countdown">
-            <div class="chosenTeam">
-                Major or Minor League?
+            <div id="selection">
+                <span id="majorLeagueSelected" class="active">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1280px-Major_League_Baseball_logo.svg.png" alt="Major League Baseball Logo">
+                </span>
             </div>
-            <h2>Opening day is <span id="targetDate"></span> </h2>
+            <h3>Opening Day is in:</h3>
             <div class="timerDisplay">
-                <span id="daysDisplay">DD</span> Days
-                <span id="hoursDisplay">HH</span> Hours
-                <span id="minsDisplay">MM</span> Minutes
-                <span id="secondsDisplay">SS</span> Seconds
+                <div><span id="daysDisplay">0</span>Days</div>
+                <div><span id="hoursDisplay">0</span>Hours</div>
+                <div><span id="minsDisplay">0</span>Minutes</div>
+                <div><span id="secondsDisplay">0</span>Seconds</div>
             </div>
         </div>
-        <div class="footer"><p>This is a "for fun" project by Maynard at Maniacal Industries.com. Team logos are protected by copyright by their respective owners.</p>
-            <p><a href="https://www.maniacalindustries.com/" target="_blank">Visit Maynard</a> or see the <a href="https://github.com/ManiacalMaynard/baseballCountdown" target="_blank"> GitHub repo</a>.</p>
-
+        <div class="footer">
+            <p>This is a "for fun" project by Maynard at Maniacal Industries.com. Team logos are protected by copyright by their respective owners. Background photo by <a href="https://www.pexels.com/photo/white-baseball-ball-on-brown-leather-baseball-mitt-1661950/" target="_blank" alt="Baseball in glove on a field photo">Steshka Willems from Pexels</a>.
+            Check the code in the<a href="https://github.com/ManiacalMaynard/baseballCountdown" target="_blank"> GitHub repo</a> for this project.</p>
+            <a href="https://www.maniacalindustries.com" alt="Link to Maniacal Industries">
+            <img src="https://www.maniacalindustries.com/images/mi-LOGO-2-final-wide.svg" alt="Maniacal Industries Logo" height="30px">
+            </a>
         </div>
+    </div>
     </div>
     
 </body>
 <script src="./scripts.js"></script>
+
 </html>

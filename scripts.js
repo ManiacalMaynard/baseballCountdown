@@ -1,16 +1,26 @@
 // This message will not self-destruct, ignore this console, it's just for me
 console.log('Because it\'s one, two, three strike you\'re out at the old ball game!')
 
-//function to select the league used for 
+// Set the end of the timer, this will be modified by league and team choice
+let endDate = '';
 
-//function to display the opening date for the specified league
-const setDisplay = () => {
-    document.getElementById('targetDate').innerText = "March 31st, 2022";
+//function to select the league used for coundown calculation and display
+const majorOpeningDay = new Date("Mar 31, 2022 13:00:00").getTime();
+const minorOpeningDay = new Date("Apr 08, 2022 13:00:00").getTime();
+
+
+const selected = document.querySelector('selection');
+
+const changeLeague = () => {
+    // if major is chosen set endTime to equal majorOpeningDay, else euqal to minorOpeningDay
+    document.getElementById('majorLeagueSelected').classList.contains('.active') ?
+    endDate = majorOpeningDay : endDate = minorOpeningDay
+
 }
 
-// Set the end of the timer, this will be modified by league and team choice
-let endDate = new Date("Mar 31, 2022 13:00:00").getTime()
 
+//main function that ticks away, calculates the values, and chnages the divs
+//this might be better in a more modular set up, TODO
 const timer = () => {
     setInterval(function() {
         let rightNow = new Date().getTime();
@@ -28,6 +38,5 @@ const timer = () => {
     }, 1000)
 }
 
-
-setDisplay()
+changeLeague()
 timer()
