@@ -21,23 +21,24 @@
     
     <div class="container">
         <div class="box">
-        <div class="countdown">
             <div id="selection">
-                <span id="majorLeagueSelected" class="active">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1280px-Major_League_Baseball_logo.svg.png" alt="Major League Baseball Logo">
-                </span>
+                <img id="leagueImage" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1280px-Major_League_Baseball_logo.svg.png" alt="Major League Baseball Logo">
+                <div class="selector">
+                    <span id="majorLeagueSelect" onclick="changeLeague()"  class="selected" >Major League</span>
+                    <span id="minorLeagueSelect" onclick="changeLeague()">Minor League</span>
+                </div>
+
             </div>
-            <h3>Opening Day is in:</h3>
+            <h3>Opening Day is Mar 31, 2022</h3>
             <div class="timerDisplay">
                 <div><span id="daysDisplay">0</span>Days</div>
                 <div><span id="hoursDisplay">0</span>Hours</div>
                 <div><span id="minsDisplay">0</span>Minutes</div>
                 <div><span id="secondsDisplay">0</span>Seconds</div>
             </div>
-        </div>
         <div class="footer">
-            <p>This is a "for fun" project by Maynard at Maniacal Industries.com. Team logos are protected by copyright by their respective owners. Background photo by <a href="https://www.pexels.com/photo/white-baseball-ball-on-brown-leather-baseball-mitt-1661950/" target="_blank" alt="Baseball in glove on a field photo">Steshka Willems from Pexels</a>.
-            Check the code in the<a href="https://github.com/ManiacalMaynard/baseballCountdown" target="_blank"> GitHub repo</a> for this project.</p>
+            <p>This is a "for fun" project by Maynard at Maniacal Industries.com. MLB and MiLB logos are protected by copyright by their respective owners and used here with permission. Background photo by <a href="https://www.pexels.com/photo/white-baseball-ball-on-brown-leather-baseball-mitt-1661950/" target="_blank" alt="Baseball in glove on a field photo">Steshka Willems from Pexels</a>.
+            Peruse the code in the<a href="https://github.com/ManiacalMaynard/baseballCountdown" target="_blank"> GitHub repo</a>. And have a great day!</p>
             <a href="https://www.maniacalindustries.com" alt="Link to Maniacal Industries">
             <img src="https://www.maniacalindustries.com/images/mi-LOGO-2-final-wide.svg" alt="Maniacal Industries Logo" height="30px">
             </a>
