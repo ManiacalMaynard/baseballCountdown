@@ -1,9 +1,10 @@
-*The Over-thought Baseball Opening Day Countdown Clock*
+**The Over-thought Baseball Opening Day Countdown Clock**
 
-This project is for-fun and intended to be a practice and portfolio project. Just doing a simple countdown clock is too easy so I'm over-complicating it for funzies with team selection, JSON (or possibly FireBase) data sourcing, fancy visual menu, and visual theme adaptation. If you are reading this and think "hey, what they could have done better was XYZ!" then please message me on GitHub or via my website at maniacalindustries.com.
+This project is for-fun and intended to be a practice and portfolio project. Just doing a simple countdown clock is too easy so I'm thinking about over-complicating it for funzies with team selection, JSON (or possibly FireBase) data sourcing, fancy visual menu, and visual theme adaptation. If you are reading this and think "hey, what they could have done better was XYZ!" then please message me on GitHub or via my website at maniacalindustries.com.
 
+For the time being it will remain a simple countdown clock for Major League and Minor League opening days.
 
-First visit the opening screen should be "choose your team".
+In The Future TO - DO List:
 
 Team selection by either:
  - Automatically by location. This should be a button to opt-in for location retrieval. The location info will be used to search the JSON doc for the closest team.
@@ -22,7 +23,6 @@ Team selection by either:
 
  Adding more complicated search functionality is also newer to me. Finding the closest team to city, state info should be interesting but is required for both by location and by form entry search. Otherwise it could be super frustrating for users near a team but not in the exact same town.
 
-The the future: 
  - Might include background images from the actual field associated with the selected team.
 
  - Could add animations to the transitions
