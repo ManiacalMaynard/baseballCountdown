@@ -18,11 +18,13 @@ const changeLeague = () => {
         document.getElementById('minorLeagueSelect').classList.add('selected');
         endDate = minorOpeningDay;
         document.getElementById('leagueImage').src = minorImage;
+        document.getElementById('dateDisplay').innerText = 'April 8th, 2022';
     } else {
         document.getElementById('majorLeagueSelect').classList.add('selected');
         document.getElementById('minorLeagueSelect').classList.remove('selected');
         endDate = majorOpeningDay;
         document.getElementById('leagueImage').src = majorImage;
+        document.getElementById('dateDisplay').innerText = 'March 31st, 2022';
     };
 };
 
