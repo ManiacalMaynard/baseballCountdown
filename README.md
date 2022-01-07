@@ -1,4 +1,4 @@
-**The Over-thought Baseball Opening Day Countdown Clock**
+# The Over-thought Baseball Opening Day Countdown Clock
 
 This project is for-fun and intended to be a practice and portfolio project. Just doing a simple countdown clock is too easy so I'm thinking about over-complicating it for funzies with team selection, JSON (or possibly FireBase) data sourcing, fancy visual menu, and visual theme adaptation. If you are reading this and think "hey, what they could have done better was XYZ!" then please message me on GitHub or via my website at maniacalindustries.com.
 
