@@ -3,7 +3,7 @@ console.log('Because it\'s one, two, three strike you\'re out at the old ball ga
 
 // These define the target dates for either league
 const majorOpeningDay = new Date("Mar 31, 2022 13:00:00").getTime();
-const minorOpeningDay = new Date("Apr 08, 2022 13:00:00").getTime();
+const minorOpeningDay = new Date("Apr 14, 2022 13:00:00").getTime();
 
 let endDate = majorOpeningDay;
 
