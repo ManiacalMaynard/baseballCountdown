@@ -2,8 +2,8 @@
 console.log('Because it\'s one, two, three strike you\'re out at the old ball game!')
 
 // These define the target dates for either league
-const majorOpeningDay = new Date("Apr 7, 2022 13:00:00").getTime();
-const minorOpeningDay = new Date("Apr 8, 2022 13:00:00").getTime();
+const majorOpeningDay = new Date("Mar 31, 2023 13:00:00").getTime();
+const minorOpeningDay = new Date("Apr 14, 2023 13:00:00").getTime();
 
 let endDate = majorOpeningDay;
 
@@ -18,13 +18,13 @@ const changeLeague = () => {
         document.getElementById('minorLeagueSelect').classList.add('selected');
         endDate = minorOpeningDay;
         document.getElementById('leagueImage').src = minorImage;
-        document.getElementById('dateDisplay').innerText = 'April 8th, 2022';
+        document.getElementById('dateDisplay').innerText = 'April 8th, 2023';
     } else {
         document.getElementById('majorLeagueSelect').classList.add('selected');
         document.getElementById('minorLeagueSelect').classList.remove('selected');
         endDate = majorOpeningDay;
         document.getElementById('leagueImage').src = majorImage;
-        document.getElementById('dateDisplay').innerText = 'April 7th, 2022';
+        document.getElementById('dateDisplay').innerText = 'March 31st, 2023';
     };
 };
 
