@@ -10,8 +10,8 @@ let endDate = majorOpeningDay;
 // Swaps which target date to use depending on choice. Note: assumes Major is selected on page load
 const changeLeague = () => {
     let currentLeague = document.querySelector('.selected').id;
-    let majorImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/250px-Major_League_Baseball_logo.svg.png'
-    let minorImage = 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/MiLB_logo.svg/1280px-MiLB_logo.svg.png'
+    let majorImage = './MajorLeague.png'
+    let minorImage = './MinorLeague.png'
 
     if (currentLeague == 'majorLeagueSelect') {
         document.getElementById('majorLeagueSelect').classList.remove('selected');
