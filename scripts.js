@@ -2,15 +2,15 @@
 console.log('Because it\'s one, two, three strike you\'re out at the old ball game!')
 
 // These define the target dates for either league
-const majorOpeningDay = new Date("Mar 31, 2023 13:00:00").getTime();
-const minorOpeningDay = new Date("Apr 14, 2023 13:00:00").getTime();
+const majorOpeningDay = new Date("Mar 30, 2023 13:10:00").getTime();
+const minorOpeningDay = new Date("Mar 31, 2023 01:05:00").getTime();
 
 let endDate = majorOpeningDay;
 
 // Swaps which target date to use depending on choice. Note: assumes Major is selected on page load
 const changeLeague = () => {
     let currentLeague = document.querySelector('.selected').id;
-    let majorImage = 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Major_League_Baseball_logo.svg/1280px-Major_League_Baseball_logo.svg.png'
+    let majorImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Major_League_Baseball_logo.svg/250px-Major_League_Baseball_logo.svg.png'
     let minorImage = 'https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/MiLB_logo.svg/1280px-MiLB_logo.svg.png'
 
     if (currentLeague == 'majorLeagueSelect') {
@@ -18,13 +18,13 @@ const changeLeague = () => {
         document.getElementById('minorLeagueSelect').classList.add('selected');
         endDate = minorOpeningDay;
         document.getElementById('leagueImage').src = minorImage;
-        document.getElementById('dateDisplay').innerText = 'April 8th, 2023';
+        document.getElementById('dateDisplay').innerText = 'March 31st, 2023';
     } else {
         document.getElementById('majorLeagueSelect').classList.add('selected');
         document.getElementById('minorLeagueSelect').classList.remove('selected');
         endDate = majorOpeningDay;
         document.getElementById('leagueImage').src = majorImage;
-        document.getElementById('dateDisplay').innerText = 'March 31st, 2023';
+        document.getElementById('dateDisplay').innerText = 'March 30th, 2023';
     };
 };
 
