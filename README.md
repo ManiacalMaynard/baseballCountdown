@@ -1,4 +1,8 @@
+![Baseball Countdown](./baseballCountdown.jpg "Baseball Countdown")
+
 # The Over-thought Baseball Opening Day Countdown Clock
+
+[Click me to see it live!](https://maniacalmaynard.github.io/baseballCountdown/)
 
 This project is for-fun and intended to be a practice and portfolio project that simply counts down to major and minor league opening days. If you are reading this and think "hey, what they could have done better was XYZ!" then please message me, I'd love to hear from ya!
 
