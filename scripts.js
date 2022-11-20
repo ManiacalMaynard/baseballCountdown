@@ -1,6 +1,3 @@
-// This message will not self-destruct, ignore this console.log, it's just for me
-console.log('Because it\'s one, two, three strike you\'re out at the old ball game!')
-
 // These define the target dates for either league
 const majorOpeningDay = new Date("Mar 30, 2023 13:10:00").getTime();
 const minorOpeningDay = new Date("Mar 31, 2023 01:05:00").getTime();
@@ -47,3 +44,6 @@ const timer = () => {
 }
 
 timer()
+
+// This message will not self-destruct, ignore this console.log, it's just for me
+console.log('Because it\'s one, two, three strike you\'re out at the old ball game!')
